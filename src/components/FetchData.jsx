@@ -3,7 +3,7 @@ import "./fetchdata.css";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 function FetchData() {
-  const URL = "http://localhost/wegi/";
+  const URL = "https://everyonecanchat.000webhostapp.com/";
   const navigate = useNavigate();
 
   const { id } = useParams();
@@ -11,10 +11,12 @@ function FetchData() {
   const [data, setData] = useState({});
 
   const fetchDataById = async (pid) => {
-    await axios.get(`http://localhost/wegi/index.php/${pid}`).then((res) => {
-      console.log(res.data);
-      setData(res.data);
-    });
+    await axios
+      .get(`https://everyonecanchat.000webhostapp.com/index.php/${pid}`)
+      .then((res) => {
+        console.log(res.data);
+        setData(res.data);
+      });
   };
 
   useEffect(() => {
