@@ -1,0 +1,94 @@
+.banner {
+  height: 40vh;
+}
+.banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.info {
+  background-color: var(--card_bg);
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.items-lists {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.items-lists label {
+}
+.items-lists span {
+  color: rgb(217, 217, 217);
+  margin-bottom: 8px;
+}
+.items-lists span i {
+  margin-right: 10px;
+  font-size: 10px;
+  color: rgb(198, 198, 198);
+}
+.items-lists .title_det {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.items-det {
+  margin-bottom: 15px;
+}
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.editor .btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  /* border: none; */
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+  width: 70%;
+}
+.btn-edit {
+  border: 1px solid #45da5c;
+  background-color: transparent;
+  color: #57ec6e;
+}
+.btn-edit:hover {
+  background-color: #05ff2b;
+  color: #000;
+}
+.btn-delete {
+  background-color: transparent;
+  border: 1px solid #ac2727;
+  color: #ac2727;
+}
+.btn-delete:hover {
+  background-color: #c32626;
+  color: #000;
+}
+.btn-group:active {
+  opacity: 0.7;
+}
+.btn-group i {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (max-width: 428px) {
+  .items-lists span i {
+    font-size: 14px;
+  }
+  .editor .btn-group {
+    font-size: 14px !important;
+    width: 30%;
+    padding: 2px 8px;
+  }
+}

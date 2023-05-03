@@ -1,0 +1,35 @@
+:root {
+  --divider: rgba(183, 183, 183, 0.231);
+  --back: black;
+  --card_bg: rgb(24, 24, 24);
+}
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+ol,
+ul {
+  padding-left: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: #fff;
+  }
+}
