@@ -11,12 +11,10 @@ function FetchData() {
   const [data, setData] = useState({});
 
   const fetchDataById = async (pid) => {
-    await axios
-      .get(`https://everyonecanchat.000webhostapp.com/index.php/${pid}`)
-      .then((res) => {
-        console.log(res.data);
-        setData(res.data);
-      });
+    await axios.get(`${URL}index.php?id=${pid}`).then((res) => {
+      console.log(res.data);
+      setData(res.data);
+    });
   };
 
   useEffect(() => {
@@ -24,7 +22,7 @@ function FetchData() {
   }, []);
 
   const deleteData = async () => {
-    await axios.delete(URL + `index.php/${data.id}`).then((res) => {
+    await axios.delete(URL + `index.php?id=${data.id}`).then((res) => {
       console.log(res.data);
       const result = res.data;
       if (result.status === 1) {
